@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+:root{
+    --bgcolor: #171717;
+    --darkerorange: #fb923c;
+    --lighterorange: #fed7aa;
+    --darkamber: #78350f;
+    --font: "Afacad Flux", serif;
+}
+
+body{
+    background-color: var(--bgcolor);
+    font-family: var(--font);
+}
+
+#bevgs, #fod{
+    color: var(--darkerorange);
+}
+
+#about, .hot, .cold, .veg, .nonveg, #reserve, #contact{
+    color: var(--lighterorange);
+}
+
+button {
+  background-color: var(--lighterorange);
+  border: 2px solid var(--darkamber);
+  border-radius: 30px;
+  box-shadow: var(--darkamber) 4px 4px 0 0;
+  color: var(--darkamber);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  background-color: #f8dfc3;
+}
+
+button:active {
+  box-shadow: var(--darkamber) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#menu{
+    display: grid;
+    grid-template-areas: "drinkpicture foodpicture"
+                        "bevs food"
+                        "bevs food";
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;          
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+#welcome{
+    text-align: center;
+}
+
+#about{
+    width: 50%;
+    font-style:italic;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bevs, .food{
+    text-align: center;
+}
+
+.dpic, .fpic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Rtime, #Rguests{
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    border: 5px solid var(--darkamber);
+    border-radius: 30px;
+    color: var(--darkamber);  
+    background-color: var(--lighterorange);
+}
+#reserve{
+    display: inline-block;
+    padding: 25px;
+    margin: 5px;
+    font-size: 24px;
+    border: 5px solid var(--darkamber);
+    border-image: linear-gradient(var(--darkerorange), var(--darkamber)) 1;
+    margin: 20px;
+    color: var(--darkerorange);
+    text-align: center;
+}
+#contact{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.picture{
+    border: 5px solid var(--darkamber);
+    border-image: linear-gradient(var(--darkerorange), var(--darkamber)) 1;
+}
+
+.footer{
+    text-align: center;
+    position: relative;
+    color: var(--darkerorange);
+    background-color: black;
+    padding: 2.5rem;
+}
